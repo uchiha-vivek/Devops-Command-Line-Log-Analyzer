@@ -1,0 +1,15 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: log-analyzer-job
+spec:
+  template:
+    spec:
+      containers:
+      - name: log-analyzer
+        image: uchihavivek/log-analyzer:latest
+        imagePullPolicy: IfNotPresent
+        command: ["python", "main.py"]
+        args: ["--file", "logs/sample.log", "--summary"]
+      restartPolicy: Never
+  backoffLimit: 0

@@ -1,0 +1,6 @@
+2025-10-30 10:32:14 INFO Starting server at port 8080
+2025-10-30 10:33:21 WARNING Memory usage high: 82%
+2025-10-30 10:34:05 ERROR Failed to connect to database
+2025-10-30 10:35:12 INFO User logged in: admin
+2025-10-30 10:37:00 ERROR Timeout while fetching API response
+2025-10-30 10:40:18 INFO Server health check OK
